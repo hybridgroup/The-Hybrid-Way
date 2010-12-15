@@ -4,5 +4,11 @@ Bundler.require
 
 class TheHybridWay < Sinatra::Base
   set :root, File.dirname(__FILE__)
-  # Do nothing, all files are staticly generated through yardoc
+  
+  # All files are staticly generated through yardoc, just gotta redirect to the index
+
+  get '/' do
+    redirect '/index.html'
+  end
+  
 end
