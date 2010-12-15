@@ -1,0 +1,4 @@
+--readme README.md
+-
+*.md
+examples/*.rb
