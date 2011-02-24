@@ -51,12 +51,28 @@ Formatting
         def method2
         end
 
+* List methods in ascending alphabetical order
+
+    def a_method
+    end
+
+    def b_method
+    end
+
+    def xtrange_method
+    end
+
 * The long-line limit is 80 characters
 
     Any line longer than 80 characters probably needs to be split multiple lines. Most editors
     allow you to set the long line limit and will show a bar to the right hand side.
 
 * Trailing whitespace is useless, remove it.
+
+* Put a space after a comma when listing elements
+    
+   [a,b,c,g,h] should be [a, b, c, d]
+   {:a=>1,:b=>2,:c=>3} should be {:a => 1, :b => 2, :c => 3}
 
 Syntax and Usage
 ------------------------
@@ -95,6 +111,9 @@ Syntax and Usage
 
 Common Sense
 --------------------
+
+* Make the code clean first and then use a profiler to deal with
+  performance issues.
 
 * The monkey is free! Monkey Patching / Freedom Patching should be used sparingly
 
