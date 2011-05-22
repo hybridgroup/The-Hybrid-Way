@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>File: Scss</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html" title="Index">Index</a> &raquo; 
+    <span class="title">File: Scss</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><div id='filecontents'><h1>General Guidelines</h1>
+
+<p>Indent two spaces inside a block.</p>
+
+<h1>Syntax</h1>
+
+<ul>
+<li>Alphabetize everything.</li>
+</ul>
+
+
+<p>Wrong</p>
+
+<p>Vertical Style
+` .some-style {</p>
+
+<pre class="code"><span class='width identifier id'>width</span><span class='colon op'>:</span> <span class='integer val'>100</span><span class='mod op'>%</span><span class='semicolon token'>;</span>
+<span class='color identifier id'>color</span><span class='colon op'>:</span> <span class='comment val'>#000;</span>
+<span class='text identifier id'>text</span><span class='minus op'>-</span><span class='transform identifier id'>transform</span><span class='colon op'>:</span> <span class='uppercase identifier id'>uppercase</span><span class='semicolon token'>;</span>
+</pre>
+
+<p>  }
+`</p>
+
+<p>Horizontal Style
+<code>.some-style {width: 100%; color: #000; text-transform: uppercase;}</code></p>
+
+<p>This would be wrong. Please alphabetize from A-Z.</p>
+
+<p>Correct</p>
+
+<p>Vertical Style
+` .some-style {</p>
+
+<pre class="code"><span class='color identifier id'>color</span><span class='colon op'>:</span> <span class='comment val'>#000;</span>
+<span class='text identifier id'>text</span><span class='minus op'>-</span><span class='transform identifier id'>transform</span><span class='colon op'>:</span> <span class='uppercase identifier id'>uppercase</span><span class='semicolon token'>;</span>
+<span class='width identifier id'>width</span><span class='colon op'>:</span> <span class='integer val'>100</span><span class='mod op'>%</span><span class='semicolon token'>;</span>
+</pre>
+
+<p>  }
+`</p>
+
+<p>Horizontal Style
+<code>.some-style {color: #000; text-transform: uppercase; width: 100%;}</code></p>
+
+<ul>
+<li>Use the proper extension format for file names.
+ filename.extention.formatter</li>
+</ul>
+
+
+<p>E.g for HAML <code>filename.html.haml</code>
+E.g for Javascript <code>filename.js.erb</code></p>
+
+<ul>
+<li>Avoid Javascript in an HTML view.</li>
+</ul>
+
+
+<p>Please avoid putting any Javascript in .html extension views. This leads
+to ambiguety and general confusion.</p>
+
+<p>General guideline, create a helper method that automatically includes a
+partial of the current action in javascript format.</p>
+
+<p><code>_action.js</code></p></div></div>
+    
+    <div id="footer">
+  Generated on Sun May 22 00:23:30 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.6.5 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>

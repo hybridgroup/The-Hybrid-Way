@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documentation by YARD 0.6.5</title>
+<title>File: Rails</title>
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
 <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
 
@@ -23,8 +23,8 @@
     <div id="header">
       <div id="menu">
   
-    
-    <span class="title"></span>
+    <a href="_index.html" title="Index">Index</a> &raquo; 
+    <span class="title">File: Rails</span>
   
   
   <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
@@ -41,54 +41,34 @@
     
     <iframe id="search_frame"></iframe>
     
-    <div id="content"><h1 class="noborder title">Documentation by YARD 0.6.5</h1>
-<div id="listing">
-  <h1 class="alphaindex">Alphabetic Index</h1>
-  
-  <h2>File Listing</h2>
-  <ul id="files">
-  
-  
-    <li class="r1"><a href="index.html" title="README">README</a></li>
-    
-  
-    <li class="r2"><a href="file.Git.html" title="Git">Git</a></li>
-    
-  
-    <li class="r1"><a href="file.Javascript.html" title="Javascript">Javascript</a></li>
-    
-  
-    <li class="r2"><a href="file.Rails.html" title="Rails">Rails</a></li>
-    
-  
-    <li class="r1"><a href="index.html" title="README">README</a></li>
-    
-  
-    <li class="r2"><a href="file.Ruby.html" title="Ruby">Ruby</a></li>
-    
-  
-    <li class="r1"><a href="file.Scss.html" title="Scss">Scss</a></li>
-    
-  
-  </ul>
+    <div id="content"><div id='filecontents'><h1>General Guidelines</h1>
 
-<div class="clear"></div>
-<h2>Namespace Listing A-Z</h2>
+<p>Indent two spaces inside a block.
+Use HAML/Sass</p>
+
+<h1>Views</h1>
+
+<ul>
+<li>Use the proper extension format for file names.
+ filename.extention.formatter</li>
+</ul>
 
 
+<p>E.g for HAML <code>filename.html.haml</code>
+E.g for Javascript <code>filename.js.erb</code></p>
+
+<ul>
+<li>Avoid Javascript in an HTML view.</li>
+</ul>
 
 
-<table>
-  <tr>
-    <td valign='top' width="33%">
-      
-    </td>
-  </tr>
-</table>
+<p>Please avoid putting any Javascript in .html extension views. This leads
+to ambiguety and general confusion.</p>
 
-</div>
+<p>General guideline, create a helper method that automatically includes a
+partial of the current action in javascript format.</p>
 
-</div>
+<p><code>_action.js</code></p></div></div>
     
     <div id="footer">
   Generated on Sun May 22 00:23:30 2011 by 

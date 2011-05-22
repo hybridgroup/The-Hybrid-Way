@@ -2,7 +2,7 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta name="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>File: Ruby</title>
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
 <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
@@ -56,50 +56,66 @@ You can always optimize later.</p>
 <ul>
 <li><p>Indent with "soft tab two" (two spaces in place of a tab)</p>
 
-<p>Most (good) editors have an option in their preferences to change this. As will be stated
-in the styling guidelines, our HAML templates use soft tabs as well.</p></li>
+<p>  Most (good) editors have an option in their preferences to change this. As will be stated
+  in the styling guidelines, our HAML templates use soft tabs as well.</p></li>
 <li><p>Indent every inner block once. Twice if inside an array or hash declaration.</p>
 
-<p>Pretty obvious, if you have a block, indent it.
-(Please avoid the use of big hash tables and method chaining.)</p>
+<p>  Pretty obvious, if you have a block, indent it.
+  (Please avoid the use of big hash tables and method chaining.)</p>
 
-<pre class="code"><span class='long_hash identifier id'>long_hash</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span><span class='symbol val'>:a</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'b'</span><span class='comma token'>,</span> <span class='symbol val'>:c</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'d'</span><span class='comma token'>,</span> <span class='symbol val'>:e</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'f'</span><span class='comma token'>,</span> <span class='symbol val'>:g</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'h'</span><span class='comma token'>,</span> <span class='symbol val'>:i</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'j'</span><span class='comma token'>,</span> <span class='symbol val'>:k</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'l'</span><span class='comma token'>,</span> <span class='symbol val'>:m</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'n'</span><span class='comma token'>,</span>
-    <span class='symbol val'>:o</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'p'</span><span class='comma token'>,</span> <span class='symbol val'>:q</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'r'</span><span class='comma token'>,</span> <span class='symbol val'>:s</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'t'</span><span class='comma token'>,</span> <span class='symbol val'>:u</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'v'</span><span class='comma token'>,</span> <span class='symbol val'>:x</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'y'</span><span class='comma token'>,</span> <span class='symbol val'>:z</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='integer val'>0</span><span class='rbrace token'>}</span>
+<pre class="code">  <span class='long_hash identifier id'>long_hash</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span><span class='symbol val'>:a</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'b'</span><span class='comma token'>,</span> <span class='symbol val'>:c</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'d'</span><span class='comma token'>,</span> <span class='symbol val'>:e</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'f'</span><span class='comma token'>,</span> <span class='symbol val'>:g</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'h'</span><span class='comma token'>,</span> <span class='symbol val'>:i</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'j'</span><span class='comma token'>,</span> <span class='symbol val'>:k</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'l'</span><span class='comma token'>,</span> <span class='symbol val'>:m</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'n'</span><span class='comma token'>,</span>
+      <span class='symbol val'>:o</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'p'</span><span class='comma token'>,</span> <span class='symbol val'>:q</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'r'</span><span class='comma token'>,</span> <span class='symbol val'>:s</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'t'</span><span class='comma token'>,</span> <span class='symbol val'>:u</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'v'</span><span class='comma token'>,</span> <span class='symbol val'>:x</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'y'</span><span class='comma token'>,</span> <span class='symbol val'>:z</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='integer val'>0</span><span class='rbrace token'>}</span>
 
-<span class='comment val'># Don't do this, but if you really have to...</span>
-<span class='method_chain identifier id'>method_chain</span> <span class='assign token'>=</span> <span class='long_hash identifier id'>long_hash</span><span class='dot token'>.</span><span class='invert identifier id'>invert</span><span class='dot token'>.</span><span class='entries identifier id'>entries</span><span class='dot token'>.</span><span class='reverse identifier id'>reverse</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='dot token'>.</span><span class='upcase identifier id'>upcase</span><span class='dot token'>.</span><span class='split identifier id'>split</span><span class='lparen token'>(</span><span class='string val'>''</span><span class='rparen token'>)</span><span class='dot token'>.</span><span class='size identifier id'>size</span><span class='dot token'>.</span><span class='hash identifier id'>hash</span><span class='dot token'>.</span><span class='chr identifier id'>chr</span><span class='dot token'>.</span>
-    <span class='to_i identifier id'>to_i</span><span class='dot token'>.</span><span class='next identifier id'>next</span><span class='dot token'>.</span><span class='floor identifier id'>floor</span><span class='dot token'>.</span><span class='odd? fid id'>odd?</span><span class='dot token'>.</span><span class='hash identifier id'>hash</span><span class='dot token'>.</span><span class='pred identifier id'>pred</span><span class='dot token'>.</span><span class='round identifier id'>round</span><span class='dot token'>.</span><span class='size identifier id'>size</span><span class='dot token'>.</span><span class='hash identifier id'>hash</span><span class='dot token'>.</span><span class='succ identifier id'>succ</span><span class='dot token'>.</span><span class='hash identifier id'>hash</span><span class='dot token'>.</span><span class='next identifier id'>next</span><span class='dot token'>.</span><span class='hash identifier id'>hash</span><span class='dot token'>.</span><span class='chr identifier id'>chr</span>
+  <span class='comment val'># Don't do this, but if you really have to...</span>
+  <span class='method_chain identifier id'>method_chain</span> <span class='assign token'>=</span> <span class='long_hash identifier id'>long_hash</span><span class='dot token'>.</span><span class='invert identifier id'>invert</span><span class='dot token'>.</span><span class='entries identifier id'>entries</span><span class='dot token'>.</span><span class='reverse identifier id'>reverse</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='dot token'>.</span><span class='upcase identifier id'>upcase</span><span class='dot token'>.</span><span class='split identifier id'>split</span><span class='lparen token'>(</span><span class='string val'>''</span><span class='rparen token'>)</span><span class='dot token'>.</span><span class='size identifier id'>size</span><span class='dot token'>.</span><span class='hash identifier id'>hash</span><span class='dot token'>.</span><span class='chr identifier id'>chr</span><span class='dot token'>.</span>
+      <span class='to_i identifier id'>to_i</span><span class='dot token'>.</span><span class='next identifier id'>next</span><span class='dot token'>.</span><span class='floor identifier id'>floor</span><span class='dot token'>.</span><span class='odd? fid id'>odd?</span><span class='dot token'>.</span><span class='hash identifier id'>hash</span><span class='dot token'>.</span><span class='pred identifier id'>pred</span><span class='dot token'>.</span><span class='round identifier id'>round</span><span class='dot token'>.</span><span class='size identifier id'>size</span><span class='dot token'>.</span><span class='hash identifier id'>hash</span><span class='dot token'>.</span><span class='succ identifier id'>succ</span><span class='dot token'>.</span><span class='hash identifier id'>hash</span><span class='dot token'>.</span><span class='next identifier id'>next</span><span class='dot token'>.</span><span class='hash identifier id'>hash</span><span class='dot token'>.</span><span class='chr identifier id'>chr</span>
 </pre></li>
 <li><p>The protected and private keywords count as starting a block</p>
 
-<p>Indent protected and private method definitions</p>
+<p>  Indent protected and private method definitions</p>
 
-<pre class="code"><span class='class class kw'>class</span> <span class='Example constant id'>Example</span>
+<pre class="code">  <span class='class class kw'>class</span> <span class='Example constant id'>Example</span>
 
-  <span class='protected identifier id'>protected</span>
+    <span class='protected identifier id'>protected</span>
 
-    <span class='def def kw'>def</span> <span class='pro identifier id'>pro</span>
-    <span class='end end kw'>end</span>
+      <span class='def def kw'>def</span> <span class='pro identifier id'>pro</span>
+      <span class='end end kw'>end</span>
 
-  <span class='private identifier id'>private</span>
+    <span class='private identifier id'>private</span>
 
-    <span class='def def kw'>def</span> <span class='priv identifier id'>priv</span>
-    <span class='end end kw'>end</span>
-<span class='end end kw'>end</span>
+      <span class='def def kw'>def</span> <span class='priv identifier id'>priv</span>
+      <span class='end end kw'>end</span>
+  <span class='end end kw'>end</span>
 </pre></li>
 <li><p>Separate method definitions by a blank line</p>
 
-<pre class="code"><span class='def def kw'>def</span> <span class='method1 identifier id'>method1</span>
-<span class='end end kw'>end</span>
+<pre class="code">  <span class='def def kw'>def</span> <span class='method1 identifier id'>method1</span>
+  <span class='end end kw'>end</span>
 
-<span class='def def kw'>def</span> <span class='method2 identifier id'>method2</span>
-<span class='end end kw'>end</span>
+  <span class='def def kw'>def</span> <span class='method2 identifier id'>method2</span>
+  <span class='end end kw'>end</span>
+</pre></li>
+<li><p>List methods in ascending alphabetical order</p>
+
+<pre class="code">  <span class='def def kw'>def</span> <span class='a_method identifier id'>a_method</span>
+  <span class='end end kw'>end</span>
+
+  <span class='def def kw'>def</span> <span class='b_method identifier id'>b_method</span>
+  <span class='end end kw'>end</span>
+
+  <span class='def def kw'>def</span> <span class='xtrange_method identifier id'>xtrange_method</span>
+  <span class='end end kw'>end</span>
 </pre></li>
 <li><p>The long-line limit is 80 characters</p>
 
-<p>Any line longer than 80 characters probably needs to be split multiple lines. Most editors
-allow you to set the long line limit and will show a bar to the right hand side.</p></li>
+<p>  Any line longer than 80 characters probably needs to be split multiple lines. Most editors
+  allow you to set the long line limit and will show a bar to the right hand side.</p></li>
 <li><p>Trailing whitespace is useless, remove it.</p></li>
+<li><p>Put a space after a comma when listing elements</p>
+
+<pre class="code"><span class='lbrack token'>[</span><span class='a identifier id'>a</span><span class='comma token'>,</span><span class='b identifier id'>b</span><span class='comma token'>,</span><span class='c identifier id'>c</span><span class='comma token'>,</span><span class='g identifier id'>g</span><span class='comma token'>,</span><span class='h identifier id'>h</span><span class='rbrack token'>]</span> <span class='should identifier id'>should</span> <span class='be identifier id'>be</span> <span class='lbrack token'>[</span><span class='a identifier id'>a</span><span class='comma token'>,</span> <span class='b identifier id'>b</span><span class='comma token'>,</span> <span class='c identifier id'>c</span><span class='comma token'>,</span> <span class='d identifier id'>d</span><span class='rbrack token'>]</span>
+<span class='lbrace token'>{</span><span class='symbol val'>:a=</span><span class='gt op'>&gt;</span><span class='integer val'>1</span><span class='comma token'>,</span><span class='symbol val'>:b=</span><span class='gt op'>&gt;</span><span class='integer val'>2</span><span class='comma token'>,</span><span class='symbol val'>:c=</span><span class='gt op'>&gt;</span><span class='integer val'>3</span><span class='rbrace token'>}</span> <span class='should identifier id'>should</span> <span class='be identifier id'>be</span> <span class='lbrace token'>{</span><span class='symbol val'>:a</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='integer val'>1</span><span class='comma token'>,</span> <span class='symbol val'>:b</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='integer val'>2</span><span class='comma token'>,</span> <span class='symbol val'>:c</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='integer val'>3</span><span class='rbrace token'>}</span>
+</pre></li>
 </ul>
 
 
@@ -108,26 +124,26 @@ allow you to set the long line limit and will show a bar to the right hand side.
 <ul>
 <li><p>Use the ternary operator for single line if ... else</p>
 
-<pre class="code"><span class='ternary identifier id'>ternary</span> <span class='assign token'>=</span> <span class='true true kw'>true</span> <span class='question op'>?</span> <span class='string val'>'yes'</span> <span class='colon op'>:</span> <span class='string val'>'no'</span>
+<pre class="code">  <span class='ternary identifier id'>ternary</span> <span class='assign token'>=</span> <span class='true true kw'>true</span> <span class='question op'>?</span> <span class='string val'>'yes'</span> <span class='colon op'>:</span> <span class='string val'>'no'</span>
 </pre></li>
 <li><p>You don't need a semicolon</p>
 
-<p>What's a semicolon?</p></li>
+<p>  What's a semicolon?</p></li>
 <li><p>Explicit returns only when necessary</p></li>
 <li><p>Use { ... } for single line blocks and do ... end for multiline blocks</p></li>
 <li><p>Reducing or Injecting? Use |m, i|</p>
 
-<p>Memory and Item or Iterator</p></li>
+<p>  Memory and Item or Iterator</p></li>
 <li><p>Choose length over size; but count on ActiveRecord</p>
 
-<p>On ActiveRecord associations, .count will issue a "SELECT COUNT(*) FROM ...." query.
-If you call length or size, it will try to pull all the associations from the db and then
-count them (if it hasn't already been loaded). You also can't specify conditions with
-length or size. Remember: You can always count on ActiveRecord.
-To see why you should use length over size, try calling size on a Fixnum.</p>
+<p>  On ActiveRecord associations, .count will issue a "SELECT COUNT(*) FROM ...." query.
+  If you call length or size, it will try to pull all the associations from the db and then
+  count them (if it hasn't already been loaded). You also can't specify conditions with
+  length or size. Remember: You can always count on ActiveRecord.
+  To see why you should use length over size, try calling size on a Fixnum.</p>
 
-<pre class="code"><span class='irb identifier id'>irb</span><span class='symbol val'>:0</span><span class='gt op'>&gt;</span> <span class='float val'>5</span><span class='dot token'>.</span><span class='size identifier id'>size</span>
-<span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='integer val'>8</span>
+<pre class="code">  <span class='irb identifier id'>irb</span><span class='symbol val'>:0</span><span class='gt op'>&gt;</span> <span class='float val'>5</span><span class='dot token'>.</span><span class='size identifier id'>size</span>
+  <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='integer val'>8</span>
 </pre></li>
 <li><p>Write for 1.8.7 but don't try to break 1.9.2 (or newer)</p></li>
 <li><p>Meta programming will get over your head when you least expect it, be careful</p></li>
@@ -137,20 +153,33 @@ To see why you should use length over size, try calling size on a Fixnum.</p>
 <h2>Common Sense</h2>
 
 <ul>
+<li><p>Make the code clean first and then use a profiler to deal with
+performance issues.</p></li>
 <li><p>The monkey is free! Monkey Patching / Freedom Patching should be used sparingly</p>
 
-<p>Monkeys roaming free at the zoo could be both a good thing and a bad thing.
-Monkey Patching is one of the more powerful features of Ruby. But as with all power,
-don't let it consume you. If you find a problem with a gem or library, contribute a patch.</p></li>
+<p>  Monkeys roaming free at the zoo could be both a good thing and a bad thing.
+  Monkey Patching is one of the more powerful features of Ruby. But as with all power,
+  don't let it consume you. If you find a problem with a gem or library, contribute a patch.</p></li>
 <li><p>Keep It Simple Stupid</p></li>
 <li><p>Don't Repeat Yourself</p></li>
+</ul>
+
+
+<h2>Testing</h2>
+
+<ul>
+<li><p>Starting with tests isn't what you want unless you know exactly how things work (and that it will work that way).</p>
+
+<p>  TDD and BDD tutorials neglect to mention a very crucial 0th step: the prototype. You have to have a working
+  prototype, otherwise the test is too general. It's going to be painful to have to keep rewriting the tests. Get your
+  prototype working--either in your head or as proofs of concept--and then write tests for the real thing.</p></li>
 </ul>
 </div></div>
     
     <div id="footer">
-  Generated on Wed Dec 15 01:45:54 2010 by 
+  Generated on Sun May 22 00:23:30 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.6.3 (ruby-1.8.7).
+  0.6.5 (ruby-1.8.7).
 </div>
 
   </body>

@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>File: Git</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html" title="Index">Index</a> &raquo; 
+    <span class="title">File: Git</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><div id='filecontents'><h1>General Rules</h1>
+
+<ul>
+<li>Do not commit code without green tests</li>
+<li>Your commit message should be explicit and consistent with your committing code</li>
+<li>Remember MEMO: Merge Early, Merge Often</li>
+</ul>
+
+
+<h2>Where's the Remote?</h2>
+
+<ul>
+<li><p>Do not rewrite history on anything that has been pushed to a remote--even if it's not on the master branch.</p>
+
+<p>  In particular, I'm speaking about the <code>git commit --amend/--squash</code> and <code>git rebase</code> commands. People
+  might have already fetched it and maybe even merged it to another of their local branches. Those people
+  might not know commit X was supposed to have been changed somehow, and when they pull again, it'll
+  either be a broken commit or end up reverting whatever change was made.</p></li>
+</ul>
+
+
+<h2>Good Defaults</h2>
+
+<ul>
+<li><p>Default entries for .gitignore</p>
+
+<pre class="code">  <span class='mult op'>*</span><span class='dot token'>.</span><span class='DS_Store constant id'>DS_Store</span>
+  <span class='mult op'>*</span><span class='bitnot op'>~</span>
+  <span class='dot token'>.</span><span class='rvmrc identifier id'>rvmrc</span>
+  <span class='dot token'>.</span><span class='bundle identifier id'>bundle</span>
+  <span class='Session constant id'>Session</span><span class='dot token'>.</span><span class='vim identifier id'>vim</span>
+  <span class='mult op'>*</span><span class='dot token'>.</span><span class='swp identifier id'>swp</span>
+</pre></li>
+<li><p>Default entries for .gitignore for Rails</p>
+
+<pre class="code">  <span class='config identifier id'>config</span><span class='div op'>/</span><span class='database identifier id'>database</span><span class='dot token'>.</span><span class='yml identifier id'>yml</span>
+  <span class='log identifier id'>log</span><span class='div op'>/</span>
+  <span class='tmp identifier id'>tmp</span><span class='div op'>/</span>
+  <span class='coverage identifier id'>coverage</span><span class='div op'>/</span>
+  <span class='db identifier id'>db</span><span class='div op'>/</span><span class='mult op'>*</span><span class='dot token'>.</span><span class='db identifier id'>db</span>
+  <span class='db identifier id'>db</span><span class='div op'>/</span><span class='mult op'>*</span><span class='dot token'>.</span><span class='sqlite3 identifier id'>sqlite3</span>
+  <span class='public identifier id'>public</span><span class='div op'>/</span><span class='system identifier id'>system</span><span class='div op'>/</span>
+</pre></li>
+</ul>
+</div></div>
+    
+    <div id="footer">
+  Generated on Sun May 22 00:23:30 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.6.5 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>

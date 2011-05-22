@@ -53,14 +53,14 @@ Formatting
 
 * List methods in ascending alphabetical order
 
-    def a_method
-    end
+        def a_method
+        end
 
-    def b_method
-    end
+        def b_method
+        end
 
-    def xtrange_method
-    end
+        def xtrange_method
+        end
 
 * The long-line limit is 80 characters
 
@@ -70,9 +70,9 @@ Formatting
 * Trailing whitespace is useless, remove it.
 
 * Put a space after a comma when listing elements
-    
-   [a,b,c,g,h] should be [a, b, c, d]
-   {:a=>1,:b=>2,:c=>3} should be {:a => 1, :b => 2, :c => 3}
+
+      [a,b,c,g,h] should be [a, b, c, d]
+      {:a=>1,:b=>2,:c=>3} should be {:a => 1, :b => 2, :c => 3}
 
 Syntax and Usage
 ------------------------
@@ -126,7 +126,14 @@ Common Sense
 * Don't Repeat Yourself
 
 
+Testing
+-------------
 
+* Starting with tests isn't what you want unless you know exactly how things work (and that it will work that way).
+
+    TDD and BDD tutorials neglect to mention a very crucial 0th step: the prototype. You have to have a working
+    prototype, otherwise the test is too general. It's going to be painful to have to keep rewriting the tests. Get your
+    prototype working--either in your head or as proofs of concept--and then write tests for the real thing.
 
 
 

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>File: Javascript</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html" title="Index">Index</a> &raquo; 
+    <span class="title">File: Javascript</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><div id='filecontents'><h1>General Formatting and Syntax</h1>
+
+<p>Don't really have a quick description right now, however, I recommend you learn how to utilize asynchronous events.</p>
+
+<ul>
+<li>Still in progress will update when I have time *</li>
+</ul>
+
+
+<h2>Formatting</h2>
+
+<h2>Syntax and Usage</h2>
+
+<ul>
+<li><p>Avoid inline Javascript when possible. Hook to events using whatever Javascript framework you're using.</p>
+
+<p>  However, having script tags in your html templates is fine. Just don't do an inline on[*event] hook.</p></li>
+<li><p>Remember that returning false on a jQuery callback is not the same as returning false on an inline callback.</p>
+
+<p>  The main difference is that return false; on a jQuery callback executes event.preventDefault() and
+  event.stopPropagation() as well as returns out of the function. Returning false on an inline callback only
+  prevents the default.</p></li>
+<li><p>Use event.preventDefault() or event.stopPropagation() if you only need one of it.</p>
+
+<p>  event.preventDefault() stops whatever the default behavior of the element from executing (eg an anchor
+  redirecting). event.stopPropagation() stops event bubbling up into the parent elements.</p></li>
+</ul>
+
+
+<h2>Common Sense</h2>
+
+<ul>
+<li><p>Don't cram everything into one big javascript file if only certain pages require it.</p>
+
+<p>  Especially true if those certain pages are rarely accessed.</p></li>
+</ul>
+</div></div>
+    
+    <div id="footer">
+  Generated on Sun May 22 00:23:30 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.6.5 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>
