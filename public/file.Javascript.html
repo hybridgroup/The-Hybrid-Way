@@ -55,32 +55,40 @@
 <h2>Syntax and Usage</h2>
 
 <ul>
-<li><p>Avoid inline Javascript when possible. Hook to events using whatever Javascript framework you're using.</p>
-
-<p>  However, having script tags in your html templates is fine. Just don't do an inline on[*event] hook.</p></li>
-<li><p>Remember that returning false on a jQuery callback is not the same as returning false on an inline callback.</p>
-
-<p>  The main difference is that return false; on a jQuery callback executes event.preventDefault() and
-  event.stopPropagation() as well as returns out of the function. Returning false on an inline callback only
-  prevents the default.</p></li>
-<li><p>Use event.preventDefault() or event.stopPropagation() if you only need one of it.</p>
-
-<p>  event.preventDefault() stops whatever the default behavior of the element from executing (eg an anchor
-  redirecting). event.stopPropagation() stops event bubbling up into the parent elements.</p></li>
+<li>Avoid inline Javascript when possible. Hook to events using whatever Javascript framework you're using.</li>
 </ul>
 
+
+<p>However, having script tags in your html templates is fine. Just don't do an inline on[*event] hook.</p>
+
+<ul>
+<li>Remember that returning false on a jQuery callback is not the same as returning false on an inline callback.</li>
+</ul>
+
+
+<p>The main difference is that return false; on a jQuery callback executes event.preventDefault() and
+event.stopPropagation() as well as returns out of the function. Returning false on an inline callback only
+prevents the default.</p>
+
+<ul>
+<li>Use event.preventDefault() or event.stopPropagation() if you only need one of it.</li>
+</ul>
+
+
+<p>event.preventDefault() stops whatever the default behavior of the element from executing (eg an anchor
+redirecting). event.stopPropagation() stops event bubbling up into the parent elements.</p>
 
 <h2>Common Sense</h2>
 
 <ul>
-<li><p>Don't cram everything into one big javascript file if only certain pages require it.</p>
-
-<p>  Especially true if those certain pages are rarely accessed.</p></li>
+<li>Don't cram everything into one big javascript file if only certain pages require it.</li>
 </ul>
-</div></div>
+
+
+<p>Especially true if those certain pages are rarely accessed.</p></div></div>
     
     <div id="footer">
-  Generated on Sun May 22 00:23:30 2011 by 
+  Generated on Sun May 22 00:54:47 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.6.5 (ruby-1.8.7).
 </div>

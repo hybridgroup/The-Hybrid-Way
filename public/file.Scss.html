@@ -54,46 +54,48 @@
 
 <p>Wrong</p>
 
-<p>Vertical Style
-` .some-style {</p>
+<p>Vertical Style</p>
 
-<pre class="code"><span class='width identifier id'>width</span><span class='colon op'>:</span> <span class='integer val'>100</span><span class='mod op'>%</span><span class='semicolon token'>;</span>
-<span class='color identifier id'>color</span><span class='colon op'>:</span> <span class='comment val'>#000;</span>
-<span class='text identifier id'>text</span><span class='minus op'>-</span><span class='transform identifier id'>transform</span><span class='colon op'>:</span> <span class='uppercase identifier id'>uppercase</span><span class='semicolon token'>;</span>
+<pre class="code"><span class='dot token'>.</span><span class='some identifier id'>some</span><span class='minus op'>-</span><span class='style identifier id'>style</span> <span class='lbrace token'>{</span>
+  <span class='width identifier id'>width</span><span class='colon op'>:</span> <span class='integer val'>100</span><span class='mod op'>%</span><span class='semicolon token'>;</span>
+  <span class='color identifier id'>color</span><span class='colon op'>:</span> <span class='comment val'>#000;</span>
+  <span class='text identifier id'>text</span><span class='minus op'>-</span><span class='transform identifier id'>transform</span><span class='colon op'>:</span> <span class='uppercase identifier id'>uppercase</span><span class='semicolon token'>;</span>
+<span class='rbrace token'>}</span>
 </pre>
 
-<p>  }
-`</p>
+<p>Horizontal Style</p>
 
-<p>Horizontal Style
-<code>.some-style {width: 100%; color: #000; text-transform: uppercase;}</code></p>
+<pre class="code"><span class='dot token'>.</span><span class='some identifier id'>some</span><span class='minus op'>-</span><span class='style identifier id'>style</span> <span class='lbrace token'>{</span><span class='width identifier id'>width</span><span class='colon op'>:</span> <span class='integer val'>100</span><span class='mod op'>%</span><span class='semicolon token'>;</span> <span class='color identifier id'>color</span><span class='colon op'>:</span> <span class='comment val'>#000; text-transform: uppercase;}</span>
+</pre>
 
 <p>This would be wrong. Please alphabetize from A-Z.</p>
 
 <p>Correct</p>
 
-<p>Vertical Style
-` .some-style {</p>
+<p>Vertical Style</p>
 
-<pre class="code"><span class='color identifier id'>color</span><span class='colon op'>:</span> <span class='comment val'>#000;</span>
-<span class='text identifier id'>text</span><span class='minus op'>-</span><span class='transform identifier id'>transform</span><span class='colon op'>:</span> <span class='uppercase identifier id'>uppercase</span><span class='semicolon token'>;</span>
-<span class='width identifier id'>width</span><span class='colon op'>:</span> <span class='integer val'>100</span><span class='mod op'>%</span><span class='semicolon token'>;</span>
+<pre class="code"><span class='dot token'>.</span><span class='some identifier id'>some</span><span class='minus op'>-</span><span class='style identifier id'>style</span> <span class='lbrace token'>{</span>
+  <span class='color identifier id'>color</span><span class='colon op'>:</span> <span class='comment val'>#000;</span>
+  <span class='text identifier id'>text</span><span class='minus op'>-</span><span class='transform identifier id'>transform</span><span class='colon op'>:</span> <span class='uppercase identifier id'>uppercase</span><span class='semicolon token'>;</span>
+  <span class='width identifier id'>width</span><span class='colon op'>:</span> <span class='integer val'>100</span><span class='mod op'>%</span><span class='semicolon token'>;</span>
+<span class='rbrace token'>}</span>
 </pre>
 
-<p>  }
-`</p>
+<p>Horizontal Style</p>
 
-<p>Horizontal Style
-<code>.some-style {color: #000; text-transform: uppercase; width: 100%;}</code></p>
+<pre class="code"><span class='dot token'>.</span><span class='some identifier id'>some</span><span class='minus op'>-</span><span class='style identifier id'>style</span> <span class='lbrace token'>{</span><span class='color identifier id'>color</span><span class='colon op'>:</span> <span class='comment val'>#000; text-transform: uppercase; width: 100%;}</span>
+</pre>
 
 <ul>
-<li>Use the proper extension format for file names.
- filename.extention.formatter</li>
+<li>Use the proper extension format for file names.</li>
 </ul>
 
 
-<p>E.g for HAML <code>filename.html.haml</code>
-E.g for Javascript <code>filename.js.erb</code></p>
+<p>filename.extention.formatter</p>
+
+<p>E.g for HAML <code>filename.html.haml</code></p>
+
+<p>E.g for Javascript <code>filename.js.erb</code></p>
 
 <ul>
 <li>Avoid Javascript in an HTML view.</li>
@@ -106,10 +108,10 @@ to ambiguety and general confusion.</p>
 <p>General guideline, create a helper method that automatically includes a
 partial of the current action in javascript format.</p>
 
-<p><code>_action.js</code></p></div></div>
+<p>_action.js</p></div></div>
     
     <div id="footer">
-  Generated on Sun May 22 00:23:30 2011 by 
+  Generated on Sun May 22 00:54:47 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.6.5 (ruby-1.8.7).
 </div>
