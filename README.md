@@ -17,7 +17,7 @@ Currently there are three sections to be planned
 1. Ruby Coding
 2. Design
 3. Testing
-4. Git
+4. [Git](/file.Git.html)
 5. Javascript
 
 Each section has its own file in Markdown format and will have their own guidelines and tips and tricks. Long standalone example code can be found in the 'examples' subdirectory.

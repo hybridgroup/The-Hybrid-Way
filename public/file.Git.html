@@ -67,30 +67,54 @@ either be a broken commit or end up reverting whatever change was made.</p>
 <ul>
 <li><p>Default entries for .gitignore</p>
 
-<pre class="code">  <span class='mult op'>*</span><span class='dot token'>.</span><span class='DS_Store constant id'>DS_Store</span>
-  <span class='mult op'>*</span><span class='bitnot op'>~</span>
-  <span class='dot token'>.</span><span class='rvmrc identifier id'>rvmrc</span>
-  <span class='dot token'>.</span><span class='bundle identifier id'>bundle</span>
-  <span class='Session constant id'>Session</span><span class='dot token'>.</span><span class='vim identifier id'>vim</span>
-  <span class='mult op'>*</span><span class='dot token'>.</span><span class='swp identifier id'>swp</span>
+<pre class="code">  *.DS_Store
+  *~
+  .rvmrc
+  .bundle
+  Session.vim
+  *.swp
 </pre></li>
 <li><p>Default entries for .gitignore for Rails</p>
 
-<pre class="code">  <span class='config identifier id'>config</span><span class='div op'>/</span><span class='database identifier id'>database</span><span class='dot token'>.</span><span class='yml identifier id'>yml</span>
-  <span class='log identifier id'>log</span><span class='div op'>/</span>
-  <span class='tmp identifier id'>tmp</span><span class='div op'>/</span>
-  <span class='coverage identifier id'>coverage</span><span class='div op'>/</span>
-  <span class='db identifier id'>db</span><span class='div op'>/</span><span class='mult op'>*</span><span class='dot token'>.</span><span class='db identifier id'>db</span>
-  <span class='db identifier id'>db</span><span class='div op'>/</span><span class='mult op'>*</span><span class='dot token'>.</span><span class='sqlite3 identifier id'>sqlite3</span>
-  <span class='public identifier id'>public</span><span class='div op'>/</span><span class='system identifier id'>system</span><span class='div op'>/</span>
+<pre class="code">  config/database.yml
+  log/
+  tmp/
+  coverage/
+  db/*.db
+  db/*.sqlite3
+  public/system/
 </pre></li>
 </ul>
-</div></div>
+
+
+<h2>Workflow</h2>
+
+<p>When working on a task, make sure you create a branch for that task with the task name and make sure you mark that task as in-progress. The format should be task-#. E.g, task-500</p>
+
+<p><code>git checkout -b task-500</code></p>
+
+<p>When committing to that branch, make sure every commit has at least one complete sentence. You can provide more detail after the initial sentence with a linebreak. (optional) See this guide for more: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html</p>
+
+<p>When the task is completed create a pull request on Github. The title of the Pull Request should include the Task# and what the task is about. E.g, “Task 500: Standardizing GitHub”. Inside the content of the Pull Request, you should include some information on what you did. It’s also a good practice to link to the Task that the Pull Request is related to.</p>
+
+<p>Once you’re done with creating the Pull Request on GitHub, be sure to move the Task to the Pull Request Queue, and to add a link to the GitHub Pull Request inside the Task comments.</p>
+
+<p>I know this is not documented anywhere yet. But fear not! We're working on it.
+We'll deliver some solid documentation for you guys to be able to follow a clear path.</p>
+
+<p>For now, you can follow these simple steps:</p>
+
+<p>Grab a task.
+Mark it in-progress.
+Create a branch.
+Commit.
+Pull-Request.
+Rinse, and repeat.</p></div></div>
     
     <div id="footer">
-  Generated on Sun May 22 00:54:47 2011 by 
+  Generated on Thu Sep 13 17:09:40 2012 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.6.5 (ruby-1.8.7).
+  0.6.5 (ruby-1.9.2).
 </div>
 
   </body>
