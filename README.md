@@ -33,6 +33,9 @@ either be a broken commit or end up reverting whatever change was made.
         .bundle
         Session.vim
         *.swp
+        idea/
+        *.iml
+        *.iws
 
 * Default entries for .gitignore for Rails
 
