@@ -1,54 +1,90 @@
-The Hybrid Way
-===========
+# The Hybrid Way
 
-This is the way we do things at the Hybrid Group. It's not the best of the best, but it's the best for us and has worked well.
+This is the way we do things at the Hybrid Group.
+It's not the best of the best, but it's the best for us and has worked well.
 
-**License**:      MIT License
-**Copyright**:    Hybrid Group 2010
+## Colaborate
 
+* To colaborate create issues or pull requests.
 
-Usage
---------
+## Git
 
-The code is written in [Markdown](http://daringfireball.net/projects/markdown/) and generated into a web browser friendly version using [yardoc](http://yardoc.org).
+### General Rules
 
-Currently there are three sections to be planned
+* Do not commit code without green tests
+* Your commit message should be explicit and consistent with your committing code
 
-1. Ruby Coding
-2. Design
-3. Testing
-4. [Git](/file.Git.html)
-5. Javascript
+### Where's the Remote?
 
-Each section has its own file in Markdown format and will have their own guidelines and tips and tricks. Long standalone example code can be found in the 'examples' subdirectory.
+* Do not rewrite history on anything that has been pushed to a remote--even if it's not on the master branch.
 
-The eye candy/web browser friendly version of this is available at
-[http://thehybridway.heroku.com](http://thehybridway.heroku.com).
+In particular, don't use the `git commit --amend/--squash` and `git rebase` commands. People
+might have already fetched it and maybe even merged it to another of their local branches. Those people
+might not know commit X was supposed to have been changed somehow, and when they pull again, it'll
+either be a broken commit or end up reverting whatever change was made.
 
-TODO
---------
+### Good Defaults
 
-1. Allocate a subdomain for this.
+* Default entries for .gitignore
 
-License
-----------
+        *.DS_Store
+        *~
+        .rvmrc
+        .bundle
+        Session.vim
+        *.swp
 
-Copyright (c) 2010 The Hybrid Group
+* Default entries for .gitignore for Rails
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+        config/database.yml
+        log/
+        tmp/
+        coverage/
+        db/*.db
+        db/*.sqlite3
+        public/system/
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+### Workflow
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+#### Starting a Feature
+
+To work on a new feature, create a new branch off the current master branch with task number and description.
+
+e.g. `10-correct-portal-links` or `20-rock-the-house`
+
+Write your code, and make sure your commits to the feature branch are atomic.
+
+#### Delivering a Feature
+
+When finished work on a feature branch:
+
+- Open a Pull Request from the feature branch against the current master branch
+- Have someone else do a code review and make sure the tests/features pass
+- Assuming everything's passing, reviewer can merge the PR into the master branch
+- Once the pull request has been accepted and merged, branch is deleted.
+
+#### You can follow these simple steps:
+
+1. Grab a task.
+1. Mark it in-progress.
+1. Create a branch.
+1. Commit.
+1. Pull-Request.
+1. Rinse, and repeat.
+
+## Ruby
+
+We try to follow this community [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide).
+
+RuboCop is a Ruby static code analyzer that will enforce many of the guidelines outlined
+
+Visit rubocop webpage for install and usage options: https://github.com/bbatsov/rubocop
+
+## Rails
+
+We try to follow this community [Rails Style Guide](https://github.com/bbatsov/rails-style-guide).
+
+## FrontEnd
+
+We believe we can have a #betterfrontend so we follow this guides:
+[Betterfrontend Guides](http://betterfrontend.com/guides)

@@ -1,3 +1,0 @@
-require 'thehybridway'
-run TheHybridWay
-
